@@ -55,6 +55,6 @@ if __name__ == '__main__':
 		targetname=commandArgs[2]
 		 
 		nameChangedNumeber= changeFileName(sourceName,targetname)
-		print "Done! "+str(nameChangedNumeber)+" of files have been chaneged"
+		print "Done! "+str(nameChangedNumeber)+" of files have been changed"
 	except:
 		print "Error: Usage \'python changeAffixName.py BEFOREnAME AFTERnAME\' "
