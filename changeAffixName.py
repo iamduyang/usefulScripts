@@ -1,5 +1,16 @@
 # -*- coding:utf-8 -*-  
 
+#------------------------------------------------------------#
+# Author:    Yang Du 
+# Email:     duyang (-A-T-) iscas dot ac dot cn
+# Date:      2016-10-19
+# Purpose:  Change suffix of assigned files of the current file directory 
+# Usage: python changeAffixName.py originFilename afterFilename
+#------------------------------------------------------------#
+# Copyright (C) 2016       Yang DU
+# RegimeCast is freely available for non-commercial purposes
+#------------------------------------------------------------#
+
 import os,sys
 
 def  changeFileName(sourceName,targetname):
@@ -46,4 +57,4 @@ if __name__ == '__main__':
 		nameChangedNumeber= changeFileName(sourceName,targetname)
 		print "Done! "+str(nameChangedNumeber)+" of files have been chaneged"
 	except:
-		print "Error: Usage \'python changeAffixName.py BEFOREnAME AFTERnAME"
+		print "Error: Usage \'python changeAffixName.py BEFOREnAME AFTERnAME\' "
