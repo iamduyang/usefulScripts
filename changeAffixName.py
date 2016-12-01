@@ -2,13 +2,13 @@
 
 #------------------------------------------------------------#
 # Author:    Yang Du 
-# Email:     duyang (-A-T-) iscas dot ac dot cn
+# Email:     duyang2015 (-A-T-) iscas dot ac dot cn
 # Date:      2016-10-19
 # Purpose:  Change suffix of assigned files of the current file directory 
 # Usage: python changeAffixName.py originFilename afterFilename
 #------------------------------------------------------------#
 # Copyright (C) 2016       Yang DU
-# RegimeCast is freely available for non-commercial purposes
+# This code is freely available for non-commercial purposes
 #------------------------------------------------------------#
 
 import os,sys
