@@ -1,8 +1,4 @@
-/**   
-* @Title: FileHandle.java
-* @author Du 
-* @date 17th Nov 2016
-* @version version 1.0  
+/**    
 *------------------------------------------------------------*
 * Author:    Yang Du 
 * Email:     duyang2015 (-A-T-) iscas dot ac dot cn
