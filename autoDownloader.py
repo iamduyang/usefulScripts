@@ -1,6 +1,13 @@
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-  
 
-
+#------------------------------------------------------------#
+# Author:    Yang Du 
+# Email:     duyang2015 (-A-T-) iscas dot ac dot cn
+# Date:      2016-11-30
+#------------------------------------------------------------#
+# Copyright (C) 2016       Yang DU
+# This code is freely available for non-commercial purposes
+#------------------------------------------------------------#
 import os
 import time
 
