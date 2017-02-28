@@ -42,6 +42,7 @@ public class FactorMaster {
 			addCandidate=1;
 			
 		}
+		returnArrayList.add(num);
 		return returnArrayList;
 	}
 	
