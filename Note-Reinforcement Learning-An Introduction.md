@@ -1,6 +1,4 @@
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # Reinforcement Learning: An Introduction学习笔记（In Chinese）
 
@@ -11,4 +9,5 @@
 
 ## 第一章
 
-This is just a test$$\sqrt {{a^2} + {b^2}} $$
+This is just a test \\(\sqrt {{a^2} + {b^2}} \\) just a 
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
