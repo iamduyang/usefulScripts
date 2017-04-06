@@ -6,7 +6,8 @@ def exetheShell(fileName):
 	os.system("latex "+fileName)
 	os.system("latex "+fileName)
 	os.system("dvipdfm "+fileName+".dvi")
-	print 'Down!'
+	print('Down!')
+	os.system("open "+fileName+".pdf")
 
 
 if __name__ == '__main__':
@@ -17,14 +18,14 @@ if __name__ == '__main__':
 	if lenArg>=2:
 		try:
 			argvZero=sysArgv[1]
-			print argvZero
+			print(argvZero)
 			fileName =argvZero
 			exetheShell(fileName)
-		except IOError, e:
+		except IOError as e:
 			pass
 	else:
-		print "Did NOT generate PDFs!"
-		print "USAGE: python createPdf.py FILENAME(without '.tex' )"
+		print("Did NOT generate PDFs!")
+		print("USAGE: python createPdf.py FILENAME(without '.tex' )")
 
 
 	
