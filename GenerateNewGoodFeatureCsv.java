@@ -55,7 +55,7 @@ public class GenerateNewGoodFeatureCsv {
 		String[] dictionStringArray=dictionString.split(commaCharacter);
 		int attributeNum = dictionStringArray.length;
 		int[] attributeInt  = new int[attributeNum];
-		System.out.println("attribute Numbers: "+attributeNum);
+		
 		for(int i=0;i<attributeNum;i++){
 			attributeInt[i]=Integer.parseInt(dictionStringArray[i])-1;
 		}
@@ -69,9 +69,15 @@ public class GenerateNewGoodFeatureCsv {
 		
 		String currentLine = reader.readLine();
 		
+		int minFeatureNumber =featureNumber;
+		if(attributeInt.length<minFeatureNumber)
+			minFeatureNumber =attributeInt.length;
+
+		System.out.println("attribute Numbers: "+minFeatureNumber);
+
 		while(currentLine != null){
 			
-			String curWriteLine = getWriteLine(attributeInt,currentLine,featureNumber);
+			String curWriteLine = getWriteLine(attributeInt,currentLine,minFeatureNumber);
 			writeToFile(curWriteLine+"\n",curFilePath,outputfile, true);
 			currentLine = reader.readLine();
 		}
@@ -85,13 +91,11 @@ public class GenerateNewGoodFeatureCsv {
 	
 
 
-	public static String getWriteLine(int[] attributeInt,String currentLine,int featureNumber) {
+	public static String getWriteLine(int[] attributeInt,String currentLine,int minFeatureNumber) {
 		String returnLine="";
 		String[] currentLineArray = currentLine.split(commaCharacter); 
 		returnLine +=  currentLineArray[attributeInt[0]];
-		int minFeatureNumber =featureNumber;
-		if(attributeInt.length<minFeatureNumber)
-			minFeatureNumber =attributeInt.length;
+
 		for(int i=1;i<minFeatureNumber;i++){
 			returnLine += commaCharacter+currentLineArray[attributeInt[i]];
 		}
